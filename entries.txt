@@ -1,0 +1,750 @@
+
+1. 2 WATERMAN MS
+EFFICIENT SEQUENCE ALIGNMENT ALGORITHMS
+JOURNAL OF THEORETICAL BIOLOGY. 1984; 108 (3): 333-337
+LCR: 0   CR: 11   LCS: 6   GCS: 61   OCS:  
+
+2. 5 SAQI MAS, STERNBERG MJE
+A SIMPLE METHOD TO GENERATE NONTRIVIAL ALTERNATE ALIGNMENTS OF PROTEIN SEQUENCES
+JOURNAL OF MOLECULAR BIOLOGY. 1991 JUN 20; 219 (4): 727-732
+LCR: 0   CR: 36   LCS: 7   GCS: 39   OCS:  
+
+3. 6 THORNE JL, KISHINO H, FELSENSTEIN J
+AN EVOLUTIONARY MODEL FOR MAXIMUM-LIKELIHOOD ALIGNMENT OF DNA-SEQUENCES
+JOURNAL OF MOLECULAR EVOLUTION. 1991 AUG; 33 (2): 114-124
+LCR: 0   CR: 19   LCS: 19   GCS: 288   OCS:  
+
+4. 8 ZUKER M
+SUBOPTIMAL SEQUENCE ALIGNMENT IN MOLECULAR-BIOLOGY - ALIGNMENT WITH ERROR ANALYSIS
+JOURNAL OF MOLECULAR BIOLOGY. 1991 SEP 20; 221 (2): 403-420
+LCR: 0   CR: 39   LCS: 15   GCS: 68   OCS:  
+
+5. 9 SMITH RF, SMITH TF
+PATTERN-INDUCED MULTI-SEQUENCE ALIGNMENT (PIMA) ALGORITHM EMPLOYING SECONDARY STRUCTURE-DEPENDENT GAP PENALTIES FOR USE IN COMPARATIVE PROTEIN MODELING
+PROTEIN ENGINEERING. 1992 JAN; 5 (1): 35-41
+LCR: 0   CR: 56   LCS: 4   GCS: 237   OCS:  
+
+6. 10 SCHONIGER M, WATERMAN MS
+A LOCAL ALGORITHM FOR DNA-SEQUENCE ALIGNMENT WITH INVERSIONS
+BULLETIN OF MATHEMATICAL BIOLOGY. 1992 JUL; 54 (4): 521-536
+LCR: 0   CR: 19   LCS: 7   GCS: 41   OCS:  
+
+7. 15 CHAO KM, HARDISON RC, MILLER W
+CONSTRAINED SEQUENCE ALIGNMENT
+BULLETIN OF MATHEMATICAL BIOLOGY. 1993 MAY; 55 (3): 503-524
+LCR: 1   CR: 22   LCS: 2   GCS: 15   OCS:  
+
+8. 17 BARTON GJ
+AN EFFICIENT ALGORITHM TO LOCATE ALL LOCALLY OPTIMAL ALIGNMENTS BETWEEN2 SEQUENCES ALLOWING FOR GAPS
+COMPUTER APPLICATIONS IN THE BIOSCIENCES. 1993 DEC; 9 (6): 729-734
+LCR: 0   CR: 16   LCS: 5   GCS: 37   OCS:  
+
+9. 18 LIVINGSTONE CD, BARTON GJ
+PROTEIN-SEQUENCE ALIGNMENTS - A STRATEGY FOR THE HIERARCHICAL ANALYSISOF RESIDUE CONSERVATION
+COMPUTER APPLICATIONS IN THE BIOSCIENCES. 1993 DEC; 9 (6): 745-756
+LCR: 0   CR: 21   LCS: 2   GCS: 410   OCS:  
+
+10. 19 HUANG XQ
+ON GLOBAL SEQUENCE ALIGNMENT
+COMPUTER APPLICATIONS IN THE BIOSCIENCES. 1994 JUN; 10 (3): 227-235
+LCR: 0   CR: 23   LCS: 6   GCS: 195   OCS:  
+
+11. 20 WATERMAN M
+ESTIMATING STATISTICAL SIGNIFICANCE OF SEQUENCE ALIGNMENTS
+PHILOSOPHICAL TRANSACTIONS OF THE ROYAL SOCIETY B-BIOLOGICAL SCIENCES. 1994 JUN 29; 344 (1310): 383-390
+LCR: 0   CR: 18   LCS: 3   GCS: 29   OCS:  
+
+12. 21 WATERMAN MS
+PARAMETRIC AND ENSEMBLE SEQUENCE ALIGNMENT ALGORITHMS
+BULLETIN OF MATHEMATICAL BIOLOGY. 1994 JUL; 56 (4): 743-767
+LCR: 1   CR: 18   LCS: 3   GCS: 18   OCS:  
+
+13. 22 GOTOH O
+FURTHER IMPROVEMENT IN METHODS OF GROUP-TO-GROUP SEQUENCE ALIGNMENT WITH GENERALIZED PROFILE OPERATIONS
+COMPUTER APPLICATIONS IN THE BIOSCIENCES. 1994 JUL; 10 (4): 379-387
+LCR: 0   CR: 17   LCS: 2   GCS: 26   OCS:  
+
+14. 23 CORPET F, MICHOT B
+RNALIGN PROGRAM - ALIGNMENT OF RNA SEQUENCES USING BOTH PRIMARY AND SECONDARY STRUCTURES
+COMPUTER APPLICATIONS IN THE BIOSCIENCES. 1994 JUL; 10 (4): 389-399
+LCR: 0   CR: 25   LCS: 6   GCS: 65   OCS:  
+
+15. 26 GUSFIELD D, BALASUBRAMANIAN K, NAOR D
+PARAMETRIC OPTIMIZATION OF SEQUENCE ALIGNMENT
+ALGORITHMICA. 1994 OCT-NOV; 12 (4-5): 312-326
+LCR: 0   CR: 20   LCS: 7   GCS: 48   OCS:  
+
+16. 28 CHAO KM, ZHANG JH, OSTELL J, MILLER W
+A LOCAL ALIGNMENT TOOL FOR VERY LONG DNA-SEQUENCES
+COMPUTER APPLICATIONS IN THE BIOSCIENCES. 1995 APR; 11 (2): 147-153
+LCR: 2   CR: 20   LCS: 4   GCS: 33   OCS:  
+
+17. 31 Guan XJ, Uberbacher EC
+Alignments of DNA and protein sequences containing frameshift errors
+COMPUTER APPLICATIONS IN THE BIOSCIENCES. 1996 FEB; 12 (1): 31-40
+LCR: 0   CR: 10   LCS: 3   GCS: 33   OCS:  
+
+18. 32 Notredame C, Higgins DG
+SAGA: Sequence alignment by genetic algorithm
+NUCLEIC ACIDS RESEARCH. 1996 APR 15; 24 (8): 1515-1524
+LCR: 0   CR: 33   LCS: 20   GCS: 311   OCS:  
+
+19. 33 Vingron M
+Near-optimal sequence alignment
+CURRENT OPINION IN STRUCTURAL BIOLOGY. 1996 JUN; 6 (3): 346-352
+LCR: 3   CR: 49   LCS: 5   GCS: 33   OCS:  
+
+20. 34 Koretke KK, LutheySchulten Z, Wolynes PG
+Self-consistently optimized statistical mechanical energy functions for sequence structure alignment
+PROTEIN SCIENCE. 1996 JUN; 5 (6): 1043-1059
+LCR: 1   CR: 52   LCS: 2   GCS: 64   OCS:  
+
+21. 35 Gelfand MS, Mironov AA, Pevzner PA
+Gene recognition via spliced sequence alignment
+PROCEEDINGS OF THE NATIONAL ACADEMY OF SCIENCES OF THE UNITED STATES OF AMERICA. 1996 AUG 20; 93 (17): 9061-9066
+LCR: 0   CR: 35   LCS: 7   GCS: 215   OCS:  
+
+22. 36 Hughey R
+Parallel hardware for sequence comparison and alignment
+COMPUTER APPLICATIONS IN THE BIOSCIENCES. 1996 DEC; 12 (6): 473-479
+LCR: 0   CR: 36   LCS: 4   GCS: 59   OCS:  
+
+23. 44 Grice JA, Hughey R, Speck D
+Reduced space sequence alignment
+COMPUTER APPLICATIONS IN THE BIOSCIENCES. 1997 FEB; 13 (1): 45-53
+LCR: 0   CR: 14   LCS: 3   GCS: 32   OCS:  
+
+24. 45 Morrison DA, Ellis JT
+Effects of nucleotide sequence alignment on phylogeny estimation: A casestudy of 18S rDNAs of Apicomplexa
+MOLECULAR BIOLOGY AND EVOLUTION. 1997 APR; 14 (4): 428-441
+LCR: 1   CR: 87   LCS: 5   GCS: 275   OCS:  
+
+25. 46 Benson G
+Sequence alignment with tandem duplication
+JOURNAL OF COMPUTATIONAL BIOLOGY. 1997 FAL; 4 (3): 351-367
+LCR: 1   CR: 32   LCS: 3   GCS: 44   OCS:  
+
+26. 48 Notredame C, OBrien EA, Higgins DG
+RAGA:RNA sequence alignment by genetic algorithm
+NUCLEIC ACIDS RESEARCH. 1997 NOV 15; 25 (22): 4570-4580
+LCR: 2   CR: 40   LCS: 5   GCS: 75   OCS:  
+
+27. 49 Zhu J, Liu JS, Lawrence CE
+Bayesian adaptive sequence alignment algorithms
+BIOINFORMATICS. 1998; 14 (1): 25-39
+LCR: 2   CR: 46   LCS: 9   GCS: 82   OCS:  
+
+28. 53 Apostolico A, Giancarlo R
+Sequence alignment in molecular biology
+JOURNAL OF COMPUTATIONAL BIOLOGY. 1998 SUM; 5 (2): 173-196
+LCR: 4   CR: 158   LCS: 7   GCS: 42   OCS:  
+
+29. 54 Altschul SF
+Generalized affine gap costs for protein sequence alignment
+PROTEINS-STRUCTURE FUNCTION AND BIOINFORMATICS. 1998 JUL 1; 32 (1): 88-96
+LCR: 0   CR: 68   LCS: 6   GCS: 53   OCS:  
+
+30. 55 Lenhof HP, Reinert K, Vingron M
+A polyhedral approach to RNA sequence structure alignment
+JOURNAL OF COMPUTATIONAL BIOLOGY. 1998 FAL; 5 (3): 517-530
+LCR: 1   CR: 16   LCS: 5   GCS: 34   OCS:  
+
+31. 57 Barton GJ
+Protein sequence alignment techniques
+ACTA CRYSTALLOGRAPHICA SECTION D-STRUCTURAL BIOLOGY. 1998 NOV 1; 54: 1139-1146
+LCR: 5   CR: 44   LCS: 2   GCS: 11   OCS:  
+
+32. 60 Mott R
+Local sequence alignments with monotonic gap penalties
+BIOINFORMATICS. 1999 JUN; 15 (6): 455-462
+LCR: 2   CR: 25   LCS: 4   GCS: 22   OCS:  
+
+33. 61 Roytberg MA, Semionenkov MN, Tabolina OY
+Pareto-optimal alignment of biological sequences
+BIOFIZIKA. 1999 JUL-AUG; 44 (4): 581-594
+LCR: 0   CR: 15   LCS: 2   GCS: 4   OCS:  
+
+34. 62 Yu LH, Smith TF
+Positional statistical significance in sequence alignment
+JOURNAL OF COMPUTATIONAL BIOLOGY. 1999 SUM; 6 (2): 253-259
+LCR: 2   CR: 15   LCS: 2   GCS: 14   OCS:  
+
+35. 68 Caspi Y, Irani H
+A step towards sequence-to-sequence alignment
+IEEE CONFERENCE ON COMPUTER VISION AND PATTERN RECOGNITION, PROCEEDINGS, VOL II. 2000; : 682-689
+LCR: 0   CR: 7   LCS: 3   GCS: 41   OCS:  
+
+36. 70 Korf RE, Zhang WX
+Divide-and-conquer frontier search applied to optimal sequence alignment
+SEVENTEENTH NATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE (AAAI-2001) / TWELFTH INNOVATIVE APPLICATIONS OF ARTIFICIAL INTELLIGENCE CONFERENCE (IAAI-2000). 2000; : 910-916
+LCR: 0   CR: 14   LCS: 3   GCS: 40   OCS:  
+
+37. 72 Domingues FS, Lackner P, Andreeva A, Sippl MJ
+Structure-based evaluation of sequence comparison and fold recognition alignment accuracy
+JOURNAL OF MOLECULAR BIOLOGY. 2000 APR 7; 297 (4): 1003-1013
+LCR: 0   CR: 40   LCS: 7   GCS: 81   OCS:  
+
+38. 75 Sauder JM, Arthur JW, Dunbrack RL
+Large-scale comparison of protein sequence alignment algorithms with structure alignments
+PROTEINS-STRUCTURE FUNCTION AND BIOINFORMATICS. 2000 JUL 1; 40 (1): 6-22
+LCR: 1   CR: 61   LCS: 9   GCS: 176   OCS:  
+
+39. 77 Kececioglu JD, Lenhof HP, Mehlhorn K, Mutzel P, Reinert K, et al.
+A polyhedral approach to sequence alignment problems
+DISCRETE APPLIED MATHEMATICS. 2000 AUG 15; 104 (1-3): 143-186
+LCR: 3   CR: 41   LCS: 3   GCS: 34   OCS:  
+
+40. 78 Yang AS, Honig B
+An integrated approach to the analysis and modeling of protein sequencesand structures. I. Protein structural alignment and a quantitative measure for protein structural distance
+JOURNAL OF MOLECULAR BIOLOGY. 2000 AUG 18; 301 (3): 665-678
+LCR: 1   CR: 29   LCS: 4   GCS: 166   OCS:  
+
+41. 81 Powell DR, Allison L, Dix TI
+Fast, optimal alignment of three sequences using linear gap costs
+JOURNAL OF THEORETICAL BIOLOGY. 2000 DEC 7; 207 (3): 325-336
+LCR: 0   CR: 25   LCS: 2   GCS: 10   OCS:  
+
+42. 85 Dewey TG
+A sequence alignment algorithm with an arbitrary gap penalty function
+JOURNAL OF COMPUTATIONAL BIOLOGY. 2001; 8 (2): 177-190
+LCR: 1   CR: 19   LCS: 2   GCS: 14   OCS:  
+
+43. 86 Yu YK, Hwa T
+Statistical significance of probabilistic sequence alignment and related local hidden Markov models
+JOURNAL OF COMPUTATIONAL BIOLOGY. 2001; 8 (3): 249-282
+LCR: 2   CR: 46   LCS: 8   GCS: 37   OCS:  
+
+44. 88 Bahr A, Thompson JD, Thierry JC, Poch O
+BAliBASE (Benchmark Alignment dataBASE): enhancements for repeats, transmembrane sequences and circular permutations
+NUCLEIC ACIDS RESEARCH. 2001 JAN 1; 29 (1): 323-326
+LCR: 0   CR: 18   LCS: 10   GCS: 130   OCS:  
+
+45. 89 Blake JD, Cohen FE
+Pairwise sequence alignment below the twilight zone
+JOURNAL OF MOLECULAR BIOLOGY. 2001 MAR 23; 307 (2): 721-735
+LCR: 3   CR: 59   LCS: 5   GCS: 86   OCS:  
+
+46. 90 Arslan AN, Egecioglu O, Pevzner PA
+A new approach to sequence comparison: normalired sequence alignment
+BIOINFORMATICS. 2001 APR; 17 (4): 327-337
+LCR: 1   CR: 35   LCS: 9   GCS: 111   OCS:  
+
+47. 91 Rognes T
+ParAlign: a parallel sequence alignment algorithm for rapid and sensitive database searches
+NUCLEIC ACIDS RESEARCH. 2001 APR 1; 29 (7): 1647-1652
+LCR: 2   CR: 26   LCS: 4   GCS: 42   OCS:  
+
+48. 92 Pei JM, Grishin NV
+AL2CO: calculation of positional conservation in a protein sequence alignment
+BIOINFORMATICS. 2001 AUG; 17 (8): 700-712
+LCR: 1   CR: 54   LCS: 3   GCS: 311   OCS:  
+
+49. 93 Webber C, Barton GJ
+Estimation of P-values for global alignments of protein sequences
+BIOINFORMATICS. 2001 DEC; 17 (12): 1158-1167
+LCR: 2   CR: 38   LCS: 4   GCS: 26   OCS:  
+
+50. 98 Brudno M, Morgenstern B
+Fast and sensitive alignment of large genomic sequences
+CSB2002: IEEE COMPUTER SOCIETY BIOINFORMATICS CONFERENCE. 2002; : 138-147
+LCR: 2   CR: 33   LCS: 3   GCS: 34   OCS:  
+
+51. 99 Bundschuh R
+Rapid significance estimation in local sequence alignment with gaps
+JOURNAL OF COMPUTATIONAL BIOLOGY. 2002; 9 (2): 243-260
+LCR: 1   CR: 40   LCS: 3   GCS: 22   OCS:  
+
+52. 100 Shen SY, Yang J, Yao A, Hwang PI
+Super Pairwise Alignment (SPA): An efficient approach to global alignment for homologous sequences
+JOURNAL OF COMPUTATIONAL BIOLOGY. 2002; 9 (3): 477-486
+LCR: 0   CR: 14   LCS: 2   GCS: 16   OCS:  
+
+53. 102 Crochemore M, Landau GM, Ziv-Ukelson M
+A sub-quadratic sequence alignment algorithm for unrestricted cost matrices
+PROCEEDINGS OF THE THIRTEENTH ANNUAL ACM-SIAM SYMPOSIUM ON DISCRETE ALGORITHMS. 2002; : 679-688
+LCR: 0   CR: 45   LCS: 2   GCS: 35   OCS:  
+
+54. 105 Webb BJM, Liu JS, Lawrence CE
+BALSA: Bayesian algorithm for local sequence alignment
+NUCLEIC ACIDS RESEARCH. 2002 MAR 1; 30 (5): 1268-1277
+LCR: 1   CR: 18   LCS: 7   GCS: 33   OCS:  
+
+55. 107 Schlosshauer M, Ohlsson M
+A novel approach to local reliability of sequence alignments
+BIOINFORMATICS. 2002 JUN; 18 (6): 847-854
+LCR: 2   CR: 18   LCS: 5   GCS: 20   OCS:  
+
+56. 117 Cull P, Hsu T
+Recent advances in the walking tree method for biological sequence alignment
+COMPUTER AIDED SYSTEMS THEORY - EUROCAST 2003. 2003; 2809: 349-359
+LCR: 1   CR: 19   LCS: 2   GCS: 3   OCS:  
+
+57. 123 Crochemore M, Landau GM, Ziv-Ukelson M
+A subquadratic sequence alignment algorithm for unrestricted scoring matrices
+SIAM JOURNAL ON COMPUTING. 2003; 32 (6): 1654-1673
+LCR: 1   CR: 54   LCS: 5   GCS: 69   OCS:  
+
+58. 140 Dydel S, Bala P
+Large scale protein sequence alignment using FPGA reprogrammable logic devices
+FIELD-PROGRAMMABLE LOGIC AND APPLICATIONS, PROCEEDINGS. 2004; 3203: 23-32
+LCR: 0   CR: 22   LCS: 5   GCS: 27   OCS:  
+
+59. 147 Sunyaev SR, Bogopolsky GA, Oleynikova NV, Vlasov PK, Finkelstein AV, et al.
+From analysis of protein structural alignments toward a novel approachto align protein sequences
+PROTEINS-STRUCTURE FUNCTION AND BIOINFORMATICS. 2004 FEB 15; 54 (3): 569-582
+LCR: 3   CR: 42   LCS: 4   GCS: 16   OCS:  
+
+60. 148 Keightley PD, Johnson T
+MCALIGN: Stochastic alignment of noncoding DNA sequences based on an evolutionary model of sequence evolution
+GENOME RESEARCH. 2004 MAR; 14 (3): 442-450
+LCR: 1   CR: 26   LCS: 2   GCS: 46   OCS:  
+
+61. 150 Miklos I, Lunter GA, Holmes I
+A "long indel" model for evolutionary sequence alignment
+MOLECULAR BIOLOGY AND EVOLUTION. 2004 MAR; 21 (3): 529-540
+LCR: 1   CR: 18   LCS: 6   GCS: 91   OCS:  
+
+62. 151 Kleinjung J, Romein J, Lin K, Heringa J
+Contact-based sequence alignment
+NUCLEIC ACIDS RESEARCH. 2004 APR; 32 (8): 2464-2473
+LCR: 0   CR: 38   LCS: 2   GCS: 14   OCS:  
+
+63. 155 Edgar RC, Sjolander K
+A comparison of scoring functions for protein sequence profile alignment
+BIOINFORMATICS. 2004 MAY 22; 20 (8): 1301-1308
+LCR: 2   CR: 40   LCS: 8   GCS: 82   OCS:  
+
+64. 156 Wang GL, Dunbrack RL
+Scoring profile-to-profiles sequence alignments
+PROTEIN SCIENCE. 2004 JUN; 13 (6): 1612-1626
+LCR: 1   CR: 33   LCS: 6   GCS: 88   OCS:  
+
+65. 158 Koike R, Kinoshita K, Kidera A
+Probabilistic description of protein alignments for sequences and structures
+PROTEINS-STRUCTURE FUNCTION AND BIOINFORMATICS. 2004 JUL 1; 56 (1): 157-166
+LCR: 3   CR: 39   LCS: 2   GCS: 5   OCS:  
+
+66. 164 Chen ZZ, Gao Y, Lin GH, Niewiadomski R, Wang Y, et al.
+A space-efficient algorithm for sequence alignment with inversions and reversals
+THEORETICAL COMPUTER SCIENCE. 2004 OCT 6; 325 (3): 361-372
+LCR: 1   CR: 7   LCS: 2   GCS: 12   OCS:  
+
+67. 166 Rajko S, Aluru S
+Space and time optimal parallel sequence alignments
+IEEE TRANSACTIONS ON PARALLEL AND DISTRIBUTED SYSTEMS. 2004 DEC; 15 (12): 1070-1081
+LCR: 0   CR: 22   LCS: 11   GCS: 46   OCS:  
+
+68. 167 Pham TD, Zuegg J
+A probabilistic measure for alignment-free sequence comparison
+BIOINFORMATICS. 2004 DEC 12; 20 (18): 3455-3461
+LCR: 0   CR: 20   LCS: 7   GCS: 80   OCS:  
+
+69. 168 Dong QW, Lin L, Wang XL, Li MH
+Contact-based simulated annealing protein sequence alignment method
+2005 27TH ANNUAL INTERNATIONAL CONFERENCE OF THE IEEE ENGINEERING IN MEDICINE AND BIOLOGY SOCIETY, VOLS 1-7. 2005; : 2798-2801
+LCR: 1   CR: 18   LCS: 2   GCS: 2   OCS:  
+
+70. 175 Arslan AN
+Regular expression constrained sequence alignment
+COMBINATORIAL PATTERN MATCHING, PROCEEDINGS. 2005; 3537: 322-333
+LCR: 0   CR: 13   LCS: 4   GCS: 7   OCS:  
+
+71. 180 Peng ZS, Ting HF
+Time and space efficient algorithms for constrained sequence alignment
+IMPLEMENTATION AND APPLICATION OF AUTOMATA. 2005; 3317: 237-246
+LCR: 0   CR: 12   LCS: 2   GCS: 2   OCS:  
+
+72. 188 Batzoglou S
+The many faces of sequence alignment
+BRIEFINGS IN BIOINFORMATICS. 2005 MAR; 6 (1): 6-22
+LCR: 2   CR: 77   LCS: 6   GCS: 73   OCS:  
+
+73. 192 Havgaard JH, Lyngso RB, Stormo GD, Gorodkin J
+Pairwise local structural alignment of RNA sequences with sequence similarity less than 40%
+BIOINFORMATICS. 2005 MAY 1; 21 (9): 1815-1824
+LCR: 0   CR: 56   LCS: 6   GCS: 113   OCS:  
+
+74. 195 Chen CX, Schmidt B
+An adaptive grid implementation of DNA sequence alignment
+FUTURE GENERATION COMPUTER SYSTEMS-THE INTERNATIONAL JOURNAL OF ESCIENCE. 2005 JUL; 21 (7): 988-1003
+LCR: 1   CR: 27   LCS: 3   GCS: 17   OCS:  
+
+75. 196 Jaroszewski L, Rychlewski L, Li ZW, Li WZ, Godzik A
+FFAS03: a server for profile-profile sequence alignments
+NUCLEIC ACIDS RESEARCH. 2005 JUL 1; 33: W284-W288
+LCR: 1   CR: 32   LCS: 3   GCS: 389   OCS:  
+
+76. 214 Chung YS, Lu CL, Tang CY
+Efficient algorithms for regular expression constrained sequence alignment
+COMBINATORIAL PATTERN MATCHING, PROCEEDINGS. 2006; 4009: 389-400
+LCR: 1   CR: 10   LCS: 2   GCS: 7   OCS:  
+
+77. 219 Sanchez F, Salami E, Ramirez A, Valero M
+Performance analysis of sequence alignment applications
+PROCEEDINGS OF THE IEEE INTERNATIONAL SYMPOSIUM ON WORKLOAD CHARACTERIZATION. 2006; : 51-+
+LCR: 0   CR: 27   LCS: 3   GCS: 11   OCS:  
+
+78. 222 Huang WC, Umbach DM, Li LP
+Accurate anchoring alignment of divergent sequences
+BIOINFORMATICS. 2006 JAN 1; 22 (1): 29-34
+LCR: 3   CR: 36   LCS: 2   GCS: 28   OCS:  
+
+79. 225 Madhusudhan MS, Marti-Renom MA, Sanchez R, Sali A
+Variable gap penalty for protein sequence-structure alignment
+PROTEIN ENGINEERING DESIGN & SELECTION. 2006 MAR; 19 (3): 129-133
+LCR: 3   CR: 28   LCS: 4   GCS: 41   OCS:  
+
+80. 228 Litvinov II, Lobanov MY, Mironov AA, Finkelshtein AV, Roytberg MA
+Information on the secondary structure improves the quality of protein sequence alignment
+MOLECULAR BIOLOGY. 2006 MAY-JUN; 40 (3): 474-480
+LCR: 2   CR: 32   LCS: 2   GCS: 4   OCS:  
+
+81. 231 Driga A, Lu P, Schaeffer J, Szafron D, Charter K, et al.
+FastLSA: A fast, linear-space, parallel and sequential algorithm for sequence alignment
+ALGORITHMICA. 2006 JUL; 45 (3): 337-375
+LCR: 0   CR: 18   LCS: 5   GCS: 10   OCS:  
+
+82. 234 Tabei Y, Tsuda K, Kin T, Asai K
+SCARNA: fast and accurate structural alignment of RNA sequences by matching fixed-length stem fragments
+BIOINFORMATICS. 2006 JUL 15; 22 (14): 1723-1729
+LCR: 1   CR: 31   LCS: 2   GCS: 36   OCS:  
+
+83. 235 Forrest LR, Tang CL, Honig B
+On the accuracy of homology modeling and sequence alignment methods applied to membrane proteins
+BIOPHYSICAL JOURNAL. 2006 JUL 15; 91 (2): 508-517
+LCR: 1   CR: 69   LCS: 3   GCS: 181   OCS:  
+
+84. 240 Song YL, Liu CM, Huang XZ, Malmberg RL, Xu Y, et al.
+Efficient parameterized algorithms for biopolymer structure-sequence alignment
+IEEE-ACM TRANSACTIONS ON COMPUTATIONAL BIOLOGY AND BIOINFORMATICS. 2006 OCT-DEC; 3 (4): 423-432
+LCR: 1   CR: 42   LCS: 2   GCS: 22   OCS:  
+
+85. 241 Didier G, Laprevotte I, Pupin M, Henaut A
+Local decoding of sequences and alignment-free comparison
+JOURNAL OF COMPUTATIONAL BIOLOGY. 2006 OCT; 13 (8): 1465-1476
+LCR: 1   CR: 16   LCS: 2   GCS: 10   OCS:  
+
+86. 256 Benkrid K, Liu Y, Benkrid A
+Design and implementation of a highly parameterised FPGA-Based skeletonfor pairwise biological sequence alignment
+FCCM 2007: 15TH ANNUAL IEEE SYMPOSIUM ON FIELD-PROGRAMMABLE CUSTOM COMPUTING MACHINES, PROCEEDINGS. 2007; : 275-+
+LCR: 0   CR: 8   LCS: 2   GCS: 3   OCS:  
+
+87. 263 Talavera G, Castresana J
+Improvement of phylogenies after removing divergent and ambiguously aligned blocks from protein sequence alignments
+SYSTEMATIC BIOLOGY. 2007; 56 (4): 564-577
+LCR: 1   CR: 54   LCS: 2   GCS: 3190   OCS:  
+
+88. 273 Caffarena G, Pedreira C, Carreras C, Bojanic S, Nieto-Taladriz O
+Fpga acceleration for DNA sequence alignment
+JOURNAL OF CIRCUITS SYSTEMS AND COMPUTERS. 2007 APR; 16 (2): 245-266
+LCR: 0   CR: 14   LCS: 3   GCS: 16   OCS:  
+
+89. 275 Jangam SR, Chakraborti N
+A novel method for alignment of two nucleic acid sequences using ant colony optimization and genetic algorithms
+APPLIED SOFT COMPUTING. 2007 JUN; 7 (3): 1121-1130
+LCR: 1   CR: 22   LCS: 2   GCS: 16   OCS:  
+
+90. 280 Liu W, Schmidt B, Voss G, Muller-Wittig W
+Streaming algorithms for biological sequence alignment on GPUs
+IEEE TRANSACTIONS ON PARALLEL AND DISTRIBUTED SYSTEMS. 2007 SEP; 18 (9): 1270-1281
+LCR: 2   CR: 43   LCS: 9   GCS: 105   OCS:  
+
+91. 281 Chung YS, Lu CL, Tang CY
+Efficient algorithms for regular expression constrained sequence alignment
+INFORMATION PROCESSING LETTERS. 2007 SEP 15; 103 (6): 240-246
+LCR: 1   CR: 13   LCS: 3   GCS: 7   OCS:  
+
+92. 309 Lunter G, Rocco A, Mimouni N, Heger A, Caldeira A, et al.
+Uncertainty in homology inferences: Assessing and improving genomic sequence alignment
+GENOME RESEARCH. 2008 FEB; 18 (2): 298-309
+LCR: 6   CR: 62   LCS: 4   GCS: 89   OCS:  
+
+93. 314 Batista RB, Boukerche A, de Melob ACMA
+A parallel strategy for biological sequence alignment in restricted memory space
+JOURNAL OF PARALLEL AND DISTRIBUTED COMPUTING. 2008 APR; 68 (4): 548-561
+LCR: 1   CR: 23   LCS: 7   GCS: 18   OCS:  
+
+94. 322 Polyanovsky V, Roytberg MA, Tumanyan VG
+Reconstruction of genuine pair-wise sequence alignment
+JOURNAL OF COMPUTATIONAL BIOLOGY. 2008 MAY; 15 (4): 379-391
+LCR: 4   CR: 23   LCS: 2   GCS: 4   OCS:  
+
+95. 329 Do CB, Foo CS, Batzoglou S
+A max-margin model for efficient simultaneous alignment and folding of RNA sequences
+BIOINFORMATICS. 2008 JUL 1; 24 (13): I68-I76
+LCR: 1   CR: 41   LCS: 6   GCS: 58   OCS:  
+
+96. 332 Newberg LA
+Memory-efficient dynamic programming backtrace and pairwise local sequence alignment
+BIOINFORMATICS. 2008 AUG 15; 24 (16): 1772-1778
+LCR: 1   CR: 12   LCS: 2   GCS: 6   OCS:  
+
+97. 342 Kim HS, Chang HW, Liu H, Lee J, Lee D
+BIM: IMAGE MATCHING USING BIOLOGICAL GENE SEQUENCE ALIGNMENT
+2009 16TH IEEE INTERNATIONAL CONFERENCE ON IMAGE PROCESSING, VOLS 1-6. 2009; : 205-+
+LCR: 0   CR: 9   LCS: 2   GCS: 1   OCS:  
+
+98. 344 Striemer GM, Akoglu A
+Sequence Alignment with GPU: Performance and Design Challenges
+2009 IEEE INTERNATIONAL SYMPOSIUM ON PARALLEL & DISTRIBUTED PROCESSING, VOLS 1-5. 2009; : 930-939
+LCR: 1   CR: 14   LCS: 3   GCS: 28   OCS:  
+
+99. 353 Castano FS, Ramirez A, Cortes MV
+Quantitative Analysis of Sequence Alignment Applications on Multiprocessor Architectures
+CF'09: CONFERENCE ON COMPUTING FRONTIERS & WORKSHOPS. 2009; : 61-70
+LCR: 0   CR: 24   LCS: 2   GCS: 2   OCS:  
+
+100. 354 Paquete L, Alrneida JPO
+Experiments with Bicriteria Sequence Alignment
+CUTTING-EDGE RESEARCH TOPICS ON MULTIPLE CRITERIA DECISION MAKING, PROCEEDINGS. 2009; 35: 45-51
+LCR: 1   CR: 6   LCS: 3   GCS: 3   OCS:  
+
+101. 366 Newberg LA, Lawrence CE
+Exact Calculation of Distributions on Integers, with Application to Sequence Alignment
+JOURNAL OF COMPUTATIONAL BIOLOGY. 2009 JAN; 16 (1): 1-18
+LCR: 1   CR: 18   LCS: 2   GCS: 14   OCS:  
+
+102. 370 Benkrid K, Liu Y, Benkrid A
+A Highly Parameterized and Efficient FPGA-Based Skeleton for Pairwise Biological Sequence Alignment
+IEEE TRANSACTIONS ON VERY LARGE SCALE INTEGRATION (VLSI) SYSTEMS. 2009 APR; 17 (4): 561-570
+LCR: 1   CR: 30   LCS: 17   GCS: 69   OCS:  
+
+103. 377 Li RQ, Yu C, Li YR, Lam TW, Yiu SM, et al.
+SOAP2: an improved ultrafast tool for short read alignment
+BIOINFORMATICS. 2009 AUG 1; 25 (15): 1966-1967
+LCR: 0   CR: 6   LCS: 52   GCS: 2602   OCS:  
+
+104. 382 Flicek P, Birney E
+Sense from sequence reads: methods for alignment and assembly
+NATURE METHODS. 2009 NOV; 6 (11): S6-S12
+LCR: 3   CR: 34   LCS: 10   GCS: 226   OCS:  
+
+105. 388 Bonny T, Zidan MA, Salama KN
+An Adaptive Hybrid Multiprocessor Technique for Bioinformatics Sequence Alignment
+2010 5TH CAIRO INTERNATIONAL BIOMEDICAL ENGINEERING CONFERENCE (CIBEC 2010). 2010; : 112-115
+LCR: 0   CR: 7   LCS: 2   GCS: 7   OCS:  
+
+106. 396 Kim HS, Chang HW, Lee J, Lee D
+BASIL: Effective Near-Duplicate Image Detection Using Gene Sequence Alignment
+ADVANCES IN INFORMATION RETRIEVAL, PROCEEDINGS. 2010; 5993: 229-+
+LCR: 0   CR: 15   LCS: 2   GCS: 8   OCS:  
+
+107. 406 Sarkar S, Kulkarni GR, Pande PP, Kalyanaraman A
+Network-on-Chip Hardware Accelerators for Biological Sequence Alignment
+IEEE TRANSACTIONS ON COMPUTERS. 2010 JAN; 59 (1): 29-41
+LCR: 3   CR: 28   LCS: 4   GCS: 31   OCS:  
+
+108. 411 Li H, Durbin R
+Fast and accurate long-read alignment with Burrows-Wheeler transform
+BIOINFORMATICS. 2010 MAR 1; 26 (5): 589-595
+LCR: 0   CR: 22   LCS: 34   GCS: 7197   OCS:  
+
+109. 413 Qi ZH, Qi XQ, Liu CC
+New method for global alignment of 2 DNA sequences by the tree data structure
+JOURNAL OF THEORETICAL BIOLOGY. 2010 MAR 21; 263 (2): 227-236
+LCR: 0   CR: 46   LCS: 2   GCS: 9   OCS:  
+
+110. 419 Boukerche A, Correa JM, de Melo ACMA, Jacobi RP
+A Hardware Accelerator for the Fast Retrieval of DIALIGN Biological Sequence Alignments in Linear Space
+IEEE TRANSACTIONS ON COMPUTERS. 2010 JUN; 59 (6): 808-821
+LCR: 0   CR: 35   LCS: 2   GCS: 19   OCS:  
+
+111. 427 Li H, Homer N
+A survey of sequence alignment algorithms for next-generation sequencing
+BRIEFINGS IN BIOINFORMATICS. 2010 SEP; 11 (5): 473-483
+LCR: 4   CR: 70   LCS: 46   GCS: 526   OCS:  
+
+112. 429 Taneda A
+Multi-objective pairwise RNA sequence alignment
+BIOINFORMATICS. 2010 OCT; 26 (19): 2383-2390
+LCR: 4   CR: 42   LCS: 4   GCS: 23   OCS:  
+
+113. 430 Rizk G, Lavenier D
+GASSST: global alignment short sequence search tool
+BIOINFORMATICS. 2010 OCT; 26 (20): 2534-2540
+LCR: 2   CR: 16   LCS: 10   GCS: 64   OCS:  
+
+114. 437 Hasan L, Kentie M, Al-Ars Z
+GPU-Accelerated Protein Sequence Alignment
+2011 ANNUAL INTERNATIONAL CONFERENCE OF THE IEEE ENGINEERING IN MEDICINE AND BIOLOGY SOCIETY (EMBC). 2011; : 2442-2446
+LCR: 0   CR: 20   LCS: 2   GCS: 6   OCS:  
+
+115. 453 Agrawal A, Huang XG
+Pairwise Statistical Significance of Local Sequence Alignment Using Sequence-Specific and Position-Specific Substitution Matrices
+IEEE-ACM TRANSACTIONS ON COMPUTATIONAL BIOLOGY AND BIOINFORMATICS. 2011 JAN-FEB; 8 (1): 194-205
+LCR: 0   CR: 49   LCS: 3   GCS: 14   OCS:  
+
+116. 455 Vouzis PD, Sahinidis NV
+GPU-BLAST: using graphics processors to accelerate protein sequence alignment
+BIOINFORMATICS. 2011 JAN 15; 27 (2): 182-188
+LCR: 0   CR: 23   LCS: 16   GCS: 131   OCS:  
+
+117. 463 Blom J, Jakobi T, Doppmeier D, Jaenicke S, Kalinowski J, et al.
+Exact and complete short-read alignment to microbial genomes using Graphics Processing Unit programming
+BIOINFORMATICS. 2011 MAY 15; 27 (10): 1351-1358
+LCR: 1   CR: 17   LCS: 5   GCS: 63   OCS:  
+
+118. 471 Ruffalo M, LaFramboise T, Koyuturk M
+Comparative analysis of algorithms for next-generation sequencing read alignment
+BIOINFORMATICS. 2011 OCT 15; 27 (20): 2790-2796
+LCR: 3   CR: 31   LCS: 12   GCS: 131   OCS:  
+
+119. 499 Sebastiao N, Roma N, Flores P
+Hardware accelerator architecture for simultaneous short-read DNA sequences alignment with enhanced traceback phase
+MICROPROCESSORS AND MICROSYSTEMS. 2012 MAR; 36 (2): 96-109
+LCR: 2   CR: 21   LCS: 2   GCS: 5   OCS:  
+
+120. 501 Langmead B, Salzberg SL
+Fast gapped-read alignment with Bowtie 2
+NATURE METHODS. 2012 APR; 9 (4): 357-U54
+LCR: 3   CR: 13   LCS: 59   GCS: 23219   OCS:  
+
+121. 507 Sebastiao N, Roma N, Flores P
+Integrated Hardware Architecture for Efficient Computation of the n-Best Bio-Sequence Local Alignments in Embedded Platforms
+IEEE TRANSACTIONS ON VERY LARGE SCALE INTEGRATION (VLSI) SYSTEMS. 2012 JUL; 20 (7): 1262-1275
+LCR: 1   CR: 23   LCS: 3   GCS: 9   OCS:  
+
+122. 508 Torres JS, Espert IB, Dominguez AT, Garcia VH, Castello IM, et al.
+Using GPUs for the Exact Alignment of Short-Read Genetic Sequences by Means of the Burrows-Wheeler Transform
+IEEE-ACM TRANSACTIONS ON COMPUTATIONAL BIOLOGY AND BIOINFORMATICS. 2012 JUL-AUG; 9 (4): 1245-1256
+LCR: 4   CR: 28   LCS: 2   GCS: 20   OCS:  
+
+123. 513 Mu JC, Jiang H, Kiani A, Mohiyuddin M, Asadi NB, et al.
+Fast and accurate read alignment for resequencing
+BIOINFORMATICS. 2012 SEP 15; 28 (18): 2366-2373
+LCR: 5   CR: 20   LCS: 4   GCS: 28   OCS:  
+
+124. 516 Faust GG, Hall IM
+YAHA: fast and flexible long-read alignment with optimal breakpoint detection
+BIOINFORMATICS. 2012 OCT 1; 28 (19): 2417-2424
+LCR: 1   CR: 17   LCS: 3   GCS: 41   OCS:  
+
+125. 522 Hasan L, Zafar H
+Performance versus Power Analysis for Bioinformatics Sequence Alignment
+JOURNAL OF APPLIED RESEARCH AND TECHNOLOGY. 2012 DEC; 10: 920-928
+LCR: 0   CR: 19   LCS: 2   GCS: 3   OCS:  
+
+126. 530 Esgin E, Karagoz P
+Sequence Alignment Adaptation for Process Diagnostics and Delta Analysis
+HYBRID ARTIFICIAL INTELLIGENT SYSTEMS. 2013; 8073: 191-201
+LCR: 0   CR: 23   LCS: 2   GCS: 4   OCS:  
+
+127. 536 Neves N, Sebastiao N, Patricio A, Matos D, Tomas P, et al.
+BioBlaze: Multi-Core SIMD ASIP for DNA Sequence Alignment
+PROCEEDINGS OF THE 2013 IEEE 24TH INTERNATIONAL CONFERENCE ON APPLICATION-SPECIFIC SYSTEMS, ARCHITECTURES AND PROCESSORS (ASAP 13). 2013; : 241-244
+LCR: 2   CR: 7   LCS: 2   GCS: 4   OCS:  
+
+128. 538 Arram J, Tsoi KH, Luk WY, Jiang P
+Hardware Acceleration of Genetic Sequence Alignment
+RECONFIGURABLE COMPUTING: ARCHITECTURES, TOOLS AND APPLICATIONS. 2013; 7806: 13-24
+LCR: 1   CR: 11   LCS: 2   GCS: 21   OCS:  
+
+129. 543 Abbasi M, Paquete L, Liefooghe A, Pinheiro M, Matias P
+Improvements on bicriteria pairwise sequence alignment: algorithms and applications
+BIOINFORMATICS. 2013 APR 15; 29 (8): 996-1003
+LCR: 2   CR: 19   LCS: 2   GCS: 8   OCS:  
+
+130. 546 Sandes EFD, de Melo ACMA
+Retrieving Smith-Waterman Alignments with Optimizations for Megabase Biological Sequences Using GPU
+IEEE TRANSACTIONS ON PARALLEL AND DISTRIBUTED SYSTEMS. 2013 MAY; 24 (5): 1009-1021
+LCR: 4   CR: 35   LCS: 10   GCS: 38   OCS:  
+
+131. 550 Huang L, Popic V, Batzoglou S
+Short read alignment with populations of genomes
+BIOINFORMATICS. 2013 JUL 1; 29 (13): 361-370
+LCR: 2   CR: 38   LCS: 7   GCS: 63   OCS:  
+
+132. 574 Myers G
+Efficient Local Alignment Discovery amongst Noisy Long Reads
+ALGORITHMS IN BIOINFORMATICS. 2014; 8701: 52-67
+LCR: 0   CR: 11   LCS: 5   GCS: 84   OCS:  
+
+133. 591 Patro R, Mount SM, Kingsford C
+Sailfish enables alignment-free isoform quantification from RNA-seq reads using lightweight algorithms
+NATURE BIOTECHNOLOGY. 2014 MAY; 32 (5): 462-U174
+LCR: 0   CR: 21   LCS: 2   GCS: 342   OCS:  
+
+134. 594 Horwege S, Lindner S, Boden M, Hatje K, Kollmar M, et al.
+Spaced words and kmacs: fast alignment-free sequence comparison based on inexact word matches
+NUCLEIC ACIDS RESEARCH. 2014 JUL 1; 42 (W1): W7-W11
+LCR: 1   CR: 26   LCS: 6   GCS: 46   OCS:  
+
+135. 601 Loving J, Hernandez Y, Benson G
+BitPAl: a bit-parallel, general integer-scoring sequence alignment algorithm
+BIOINFORMATICS. 2014 NOV 15; 30 (22): 3166-3173
+LCR: 1   CR: 17   LCS: 6   GCS: 8   OCS:  
+
+136. 602 Zhao GG, Ling C, Sun DH
+SparkSW: scalable distributed computing system for large-scale biological sequence alignment
+2015 15TH IEEE/ACM INTERNATIONAL SYMPOSIUM ON CLUSTER, CLOUD AND GRID COMPUTING. 2015; : 845-852
+LCR: 1   CR: 23   LCS: 3   GCS: 21   OCS:  
+
+137. 606 Chen YT, Cong J, Lei J, Wei P
+A Novel High-Throughput Acceleration Engine for Read Alignment
+2015 IEEE 23RD ANNUAL INTERNATIONAL SYMPOSIUM ON FIELD-PROGRAMMABLE CUSTOM COMPUTING MACHINES (FCCM). 2015; : 199-202
+LCR: 1   CR: 12   LCS: 4   GCS: 28   OCS:  
+
+138. 611 Reinert K, Langmead B, Weese D, Evers DJ
+Alignment of Next-Generation Sequencing Reads
+ANNUAL REVIEW OF GENOMICS AND HUMAN GENETICS, VOL 16. 2015; 16: 133-151
+LCR: 2   CR: 70   LCS: 3   GCS: 58   OCS:  
+
+139. 627 Ji LP, Pu XR, Qu H, Liu GS
+One-dimensional pairwise CNN for the global alignment of two DNA sequences
+NEUROCOMPUTING. 2015 FEB 3; 149: 505-514
+LCR: 2   CR: 38   LCS: 2   GCS: 8   OCS:  
+
+140. 634 Garai G, Chowdhury B
+A cascaded pairwise biomolecular sequence alignment technique using evolutionary algorithm
+INFORMATION SCIENCES. 2015 MAR 10; 297: 118-139
+LCR: 2   CR: 40   LCS: 2   GCS: 8   OCS:  
+
+141. 636 Liu YC, Schmidt B
+GSWABE: faster GPU-accelerated sequence alignment with optimal alignment retrieval for short DNA sequences
+CONCURRENCY AND COMPUTATION-PRACTICE & EXPERIENCE. 2015 MAR 25; 27 (4): 958-972
+LCR: 7   CR: 52   LCS: 2   GCS: 15   OCS:  
+
+142. 640 Xin HY, Greth J, Emmons J, Pekhimenko G, Kingsford C, et al.
+Shifted Hamming distance: a fast and accurate SIMD-friendly filter to accelerate alignment verification in read mapping
+BIOINFORMATICS. 2015 MAY 15; 31 (10): 1553-1560
+LCR: 3   CR: 30   LCS: 5   GCS: 26   OCS:  
+
+143. 698 Liu B, Guo HZ, Brudno M, Wang YD
+deBGA: read alignment with de Bruijn graph-based seed and extension
+BIOINFORMATICS. 2016 NOV 1; 32 (21): 3224-3232
+LCR: 5   CR: 34   LCS: 4   GCS: 31   OCS:  
+
+144. 730 Sosic M, Sikic M
+Edlib: a C/C plus plus library for fast, exact sequence alignment using edit distance
+BIOINFORMATICS. 2017 MAY 1; 33 (9): 1394-1395
+LCR: 0   CR: 11   LCS: 9   GCS: 58   OCS:  
+
+145. 733 Kaplan R, Yavits L, Ginosar R, Weiser U
+A Resistive CAM Processing-in-Storage Architecture for DNA Sequence Alignment
+IEEE MICRO. 2017 JUL-AUG; 37 (4): 20-28
+LCR: 0   CR: 12   LCS: 4   GCS: 9   OCS:  
+
+146. 735 Lin HN, Hsu WL
+Kart: a divide-and-conquer algorithm for NGS read alignment
+BIOINFORMATICS. 2017 AUG 1; 33 (15): 2281-2287
+LCR: 4   CR: 27   LCS: 5   GCS: 18   OCS:  
+
+147. 741 Alser M, Hassan H, Xin HY, Ergin O, Mutlu O, et al.
+GateKeeper: a new hardware architecture for accelerating pre-alignmentin DNA short read mapping
+BIOINFORMATICS. 2017 NOV 1; 33 (21): 3355-3363
+LCR: 2   CR: 39   LCS: 7   GCS: 36   OCS:  
+
+148. 784 Li H
+Minimap2: pairwise alignment for nucleotide sequences
+BIOINFORMATICS. 2018 SEP 15; 34 (18): 3094-3100
+LCR: 4   CR: 37   LCS: 18   GCS: 2390   OCS:  
+
+149. 827 Luczak BB, James BT, Girgis HZ
+A survey and evaluations of histogram-based statistics in alignment-free sequence comparison
+BRIEFINGS IN BIOINFORMATICS. 2019 JUL; 20 (4): 1222-1237
+LCR: 2   CR: 45   LCS: 3   GCS: 15   OCS:  
+
+150. 839 Alser M, Hassan H, Kumar A, Mutlu O, Alkan C
+Shouji: a fast and efficient pre-alignment filter for sequence alignment
+BIOINFORMATICS. 2019 NOV 1; 35 (21): 4255-4263
+LCR: 5   CR: 46   LCS: 3   GCS: 18   OCS:
