@@ -113,3 +113,16 @@
   In circumventing the usage of DP, carefully tuned seed-extension algorithm, bounded edit-distance global alignment with elaborately designed full text index constitutes the vast majority of widely used implements nowadays, but the purge of redundant suboptimal matches is still a huge problem in the stage of seeding, while the existence of other approaches like pre-alignment filter or graph-based alignment( with reference ) is noteworthy, their's hardware affinity is still remain to discuss. 
 
   In optimizing( or accelerating ) the DP kernel, various kinds of hardware are chosen to cater the feature of this specific task: SIMD instructions in General Processors, SIMT execution in GPGPUs, Systolic arrays, Cellular Neural Network or even Application Specific Instrutions in FPGA and Procesiing-in-Storage architecture are used to exploit the intrinstic characteristics of these hetreogeneous architectures to minimize the time consumption in DP, but scoring and backtracing are two different problem, fast backtracing often accompanied by large memory footprint, which is sidesteped by even most customizable hardware like CAM( probably this procedure is difficult to implement?), to my knowledge, before effective change happens to backtracing algorithm itself, this tradeoff is still unevitable in computing.
+
+  This bactracking progress is coming to a half till July 30th, which go back to a time period around 2008, where consensus upon validity of dynamic programming algorithm in sequence alignment is not yet established. Therefore, a few researches intended to perform validation of dynamic programming and scoring matrix from the prospect of probablistics or optimization theories, and accompanied with various kind of methods which is far from mainstream nowadays, which can give me some qualitative understanding of pitfall and fruitful direction in future researching. 
+
+#### **Some plan about next-steps**
+  Some practical experiments is essential to whatever future I encounter. Learning of performance profiling tools is the basic of high performance computing, same as engineering ability.  
+
+  I shall start at running a full process of certain genomic analysis template, and profiling these procedure seperately. Result-oriented code reviewing may have better efficiency than read aimlessly.  
+
+  First I need to obtain a most used genomic analysis streamline and configure that environment, then deploy the task properly.
+
+  Second, I need to learn the profiling tools like perf, then analyze the computing process in streamline mentioned above, compiling a report about the bottleneck and more stuff that out of my anticipation for now.
+
+  Moreover, a heterogeneous acceleration approach is ought to be mastered by me, so some useful work then can be done in this short period of postgraduate life.
