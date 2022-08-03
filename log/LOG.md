@@ -1,29 +1,43 @@
-# Working logs 
+# Working logs
+
 > This logging behaviour start after July 26th, 2022 by Pan Zhaowu.
 
 ## ***Week 4, July to ...***
 
 ### ***Tasks***  
+
 - #### Short term
+
 1. - [x] Backtrace the history of sequence alignment.
+
 2. - [x] Learning the usage of Makefile.  
-3. - [x] C/C++ review. 
+
+3. - [x] C/C++ review.
+
 4. - [x] Deploy heterogenous accelerator developing environment( Quartus ).
+
 5. - [x] Test the availability of Intel arria 10 GX ES.
+
 - #### Long term
-1.  [ +++++++++=========== ]Comprehensively read the backtrace articles.
-2.  [ ==================== ]Read the source code of BWA-MEM
-3.  [ +=================== ]Read the source code of BWA-MEM2
-4.  [ +=================== ]Read the handbooks of Arria 10 developing
+
+1. [ +++++++++=========== ]Comprehensively read the backtrace articles.
+
+2. [ ==================== ]Read the source code of BWA-MEM
+
+3. [ +=================== ]Read the source code of BWA-MEM2
+
+4. [ +=================== ]Read the handbooks of Arria 10 developing
+
 ### ***Results***
   
 #### **S1-Backtrace**
+
   According to the keyword searching of ***"((((TI=(sequence alignment)) OR TI=(read alignment)) NOT TI=(multiple)) NOT TI=(phylogenetic)) AND TS=(algorithm)sequence alignment"*** in Web of Science database, I've obtained 900+ entries of article and perform citation analysis in **histcite**, the citation graph of 150 most influential works (sorted by local citation score) are shown as below:
 ![test.](../pics/out.png)
     Among those articles, I selected a few heuristicly to investigate, the list of papers and their's node tag are presented:
 
 - [ ] V. I. Levenshtein, “Binary Codes Capable of Correcting Deletions, Insertions, and Reversals,” Soviet Physics Doklady, vol. 10, pp. 707–710, Nov. 1965.
-  > Introducing an algorithm that 
+  > Introducing an algorithm that
 - [ ]  S. B. Needleman and C. D. Wunsch, “A general method applicable to the search for similarities in the amino acid sequence of two proteins,” Journal of Molecular Biology, vol. 48, no. 3, pp. 443–453, Mar. 1970, doi: 10.1016/0022-2836(70)90057-4.
 
 - [ ] M. S. Waterman, T. F. Smith, and W. A. Beyer, “Some biological sequence metrics,” Advances in Mathematics, vol. 20, no. 3, pp. 367–387, Jun. 1976, doi: 10.1016/0001-8708(76)90202-4.
@@ -108,23 +122,35 @@
   > Filter-oriented hardware/software co-design acceleration of short sequence alignment. Using heuristics quickly eliminate some of the dissimilar sequences before using the computationally-expensive optimal alignment algorithms.
 
 #### **Periodical concluding**  
-  Backtracking the most influential works accomplished in sequence alignment algorithms, it's not difficult to find that huge amount of efforts are taken into circumventing or optimizing the usage of dynamic programming kernel. 
+
+  Backtracking the most influential works accomplished in sequence alignment algorithms, it's not difficult to find that huge amount of efforts are taken into circumventing or optimizing the usage of dynamic programming kernel.
   
-  In circumventing the usage of DP, carefully tuned seed-extension algorithm, bounded edit-distance global alignment with elaborately designed full text index constitutes the vast majority of widely used implements nowadays, but the purge of redundant suboptimal matches is still a huge problem in the stage of seeding, while the existence of other approaches like pre-alignment filter or graph-based alignment( with reference ) is noteworthy, their's hardware affinity is still remain to discuss. 
+  In circumventing the usage of DP, carefully tuned seed-extension algorithm, bounded edit-distance global alignment with elaborately designed full text index constitutes the vast majority of widely used implements nowadays, but the purge of redundant suboptimal matches is still a huge problem in the stage of seeding, while the existence of other approaches like pre-alignment filter or graph-based alignment( with reference ) is noteworthy, their's hardware affinity is still remain to discuss.
 
   In optimizing( or accelerating ) the DP kernel, various kinds of hardware are chosen to cater the feature of this specific task: SIMD instructions in General Processors, SIMT execution in GPGPUs, Systolic arrays, Cellular Neural Network or even Application Specific Instrutions in FPGA and Procesiing-in-Storage architecture are used to exploit the intrinstic characteristics of these hetreogeneous architectures to minimize the time consumption in DP, but scoring and backtracing are two different problem, fast backtracing often accompanied by large memory footprint, which is sidesteped by even most customizable hardware like CAM( probably this procedure is difficult to implement?), to my knowledge, before effective change happens to backtracing algorithm itself, this tradeoff is still unevitable in computing.
 
-  This bactracking progress is coming to a half till July 30th, which go back to a time period around 2008, where consensus upon validity of dynamic programming algorithm in sequence alignment is not yet established. Therefore, a few researches intended to perform validation of dynamic programming and scoring matrix from the prospect of probablistics or optimization theories, and accompanied with various kind of methods which is far from mainstream nowadays, which can give me some qualitative understanding of pitfall and fruitful direction in future researching. 
+  This bactracking progress is coming to a half till July 30th, which go back to a time period around 2008, where consensus upon validity of dynamic programming algorithm in sequence alignment is not yet established. Therefore, a few researches intended to perform validation of dynamic programming and scoring matrix from the prospect of probablistics or optimization theories, and accompanied with various kind of methods which is far from mainstream nowadays, which can give me some qualitative understanding of pitfall and fruitful direction in future researching.
 
-#### **Some plan about next-steps**
+#### **Some plan about next-steps** ***[Aug 1st, 2022]***
+
   Some practical experiments is essential to whatever future I encounter. Learning of performance profiling tools is the basic of high performance computing, same as engineering ability.  
 
   I shall start at running a full process of certain genomic analysis template, and profiling these procedure seperately. Result-oriented code reviewing may have better efficiency than read aimlessly.  
 
-  First I need to obtain a most used genomic analysis streamline and configure that environment, then deploy the task properly.
+- [ ]  First I need to obtain a most used genomic analysis streamline and configure that environment, then deploy the task properly.
 
-  Second, I need to learn the profiling tools like perf, then analyze the computing process in streamline mentioned above, compiling a report about the bottleneck and more stuff that out of my anticipation for now.
+- [ ]  Second, I need to learn the profiling tools like perf, then analyze the computing process in streamline mentioned above, compiling a report about the bottleneck and more stuff that out of my anticipation for now.
 
+- [ ]  Moreover, a heterogeneous acceleration approach is ought to be fully mastered by me, so some useful work then can be done in this short period of postgraduate life.
+
+#### **Experiment Log**
+
+- [x] Reference Genome GRCH38 downloaded
+  > Softmask are presented in lower case, indicating... Comparing to hard mask that...
+- [ ] BWA analyzing streamline acknowledged
+  > Indexing, Mapping, 
+
+<<<<<<< HEAD
   Moreover, a heterogeneous acceleration approach is ought to be mastered by me, so some useful work then can be done in this short period of postgraduate life. The usage of git is also important in two different workline( tutor oriented and self-motivated ).
 
   Above all, there's a few thing need to be done:
@@ -132,3 +158,4 @@
   - [ ] Learning perf
   - [ ] Have some serious exercises in genomic analysis, instead of look at the code aimlessly
   - [ ] Start to practice paperwriting: in English writing, Latex coding, data visualizing
+=======
