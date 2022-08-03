@@ -125,4 +125,10 @@
 
   Second, I need to learn the profiling tools like perf, then analyze the computing process in streamline mentioned above, compiling a report about the bottleneck and more stuff that out of my anticipation for now.
 
-  Moreover, a heterogeneous acceleration approach is ought to be mastered by me, so some useful work then can be done in this short period of postgraduate life.
+  Moreover, a heterogeneous acceleration approach is ought to be mastered by me, so some useful work then can be done in this short period of postgraduate life. The usage of git is also important in two different workline( tutor oriented and self-motivated ).
+
+  Above all, there's a few thing need to be done:
+  - [ ] Learning git
+  - [ ] Learning perf
+  - [ ] Have some serious exercises in genomic analysis, instead of look at the code aimlessly
+  - [ ] Start to practice paperwriting: in English writing, Latex coding, data visualizing

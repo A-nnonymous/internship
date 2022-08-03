@@ -1,1 +1,5 @@
 *.pdf
+.gitignore
+/paper/main.*
+!/paper/main.tex
+
