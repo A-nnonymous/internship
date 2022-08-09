@@ -2,7 +2,7 @@
 
 > 此日志从7月26日由潘炤伍开始记录
 
-## ***七月第四周至...月...周***
+## ***七月第四周至八月第一周***
 
 ### ***任务***  
 
@@ -14,19 +14,31 @@
 
 3. - [x] 整理C、C++工具书以待使用
 
-4. - [x] 部署FPGA集成开发环境并测试（Quartus）
+4. - [x] 部署FPGA集成开发环境并测试（Quartus）（已放弃使用Windows开发）
 
 5. - [x] 测试 Arria 10 GX ES 是否完好可用
 
+6. - [x] 建立当前工程文档的版本管理并上传至github
+
+7. - [x] 配置Centos7 + Ubuntu 22.04LTS 环境（用于FPGA开发与CPU测试、profiling）
+
+8. - [x] 拿到真实的测序数据，并使用python写一个较为完整的、用于测试的简单脚本生成器
+
+9. - [x] 总结此阶段任务，做出取舍  
+
 - #### 长期
 
-1. [ +++++++++=========== ] 全面地阅读序列比对算法近些年发展的成果，试着找出可行方向和陷阱
+1. [ ++++++++++++++++++++ ] 【完成】全面地阅读序列比对算法近些年发展的成果，试着找出可行方向和陷阱
 
-2. [ +=================== ] 阅读BWA-MEM的源代码
+2. [ +=================== ] 【继续条件：完成5】阅读BWA-MEM的源代码
 
-3. [ +++================= ] 阅读BWA-MEM2的源代码
+3. [ +++================= ] 【暂时搁置】阅读BWA-MEM2的源代码
 
-4. [ +=================== ] 阅读有关在Arria 10 平台上实现算法异构加速相关的官方手册和补充资料
+4. [ +=================== ] 【继续条件：完成2】阅读有关在Arria 10 平台上实现算法异构加速相关的官方手册和补充资料
+
+5. [ ==================== ] 【新增】按照实际需求，系统地学习使用性能分析工具，发掘计算、访存热点后对源代码进行进一步注释
+
+6. [ ==================== ] 【新增，继续条件：完成5】根据各个阶段的不同最佳实践，构建自己的脚本生成器，用现有测序数据跑性能测试和分析
 
 ### ***结果***
   
@@ -50,31 +62,30 @@
 
 - [ ] M. S. Waterman, “Efficient sequence alignment algorithms,” Journal of Theoretical Biology, vol. 108, no. 3, pp. 333–337, Jun. 1984, doi: 10.1016/S0022-5193(84)80037-5.
 
-- [ ] M. A. S. Saqi and M. J. E. Sternberg, “A simple method to generate non-trivial alternate alignments of protein sequences,” Journal of Molecular Biology, vol. 219, no. 4, pp. 727–732, Jun. 1991, doi: 10.1016/0022-2836(91)90667-U.
+- [x] M. A. S. Saqi and M. J. E. Sternberg, “A simple method to generate non-trivial alternate alignments of protein sequences,” Journal of Molecular Biology, vol. 219, no. 4, pp. 727–732, Jun. 1991, doi: 10.1016/0022-2836(91)90667-U.
 
-- [ ] J. Thorne, H. Kishino, and J. Felsenstein, “An Evolutionary Model for Maximum Likelihood Alignment of DNA Sequences,” Journal of Molecular Evolution, vol. 33, pp. 114–124, Aug. 1991, doi: 10.1007/BF02193625.
+- [x] J. Thorne, H. Kishino, and J. Felsenstein, “An Evolutionary Model for Maximum Likelihood Alignment of DNA Sequences,” Journal of Molecular Evolution, vol. 33, pp. 114–124, Aug. 1991, doi: 10.1007/BF02193625.
 
 - [ ] Zuker, “Suboptimal sequence alignment in molecular biology: Alignment with error analysis,” Journal of Molecular Biology, vol. 221, no. 2, pp. 403–420, Sep. 1991, doi: 10.1016/0022-2836(91)80062-Y.
+  > 作为首次应用统计学方法，提出比对误差分析一概念**需再次精读，了解问题的根源和当时作者的想法出处**
 
 - [ ] M. Schöniger and M. S. Waterman, “A local algorithm for DNA sequence alignment with inversions,” Bltn Mathcal Biology, vol. 54, no. 4, pp. 521–536, Jul. 1992, doi: 10.1007/BF02459633.
-
-- [ ] F. Corpet and B. Michot, “RNAlign program: alignment of RNA sequences using both primary and secondary structures,” Bioinformatics, vol. 10, no. 4, pp. 389–399, Jul. 1994, doi: 10.1093/bioinformatics/10.4.389.
-
-- [ ] C. Notredame and D. G. Higgins, “SAGA: Sequence Alignment by Genetic Algorithm,” Nucleic Acids Res, vol. 24, no. 8, pp. 1515–1524, Apr. 1996, doi: 10.1093/nar/24.8.1515.
-
-- [ ] M. S. Gelfand, A. A. Mironov, and P. A. Pevzner, “Gene recognition via spliced sequence alignment.,” Proc Natl Acad Sci U S A, vol. 93, no. 17, pp. 9061–9066, Aug. 1996.
+  > 较为罕见地考虑到序列比对中“反转”这一变异形式，采用一次类似反向DP的方法找出副对角线局部比对最优解，并使用独特的回溯算法得到包含反转的比对结果......但明显当今对基因序列的研究中人们更加在乎长的、高质量的序列反转，此文中提出的算法是平方复杂度，而且只能进行短序列局部反转的探测，显得没那么重要，事实上也没有被采用。
 
 - [ ] R. Hughey, “Parallel hardware for sequence comparison and alignment,” Bioinformatics, vol. 12, no. 6, pp. 473–479, Dec. 1996, doi: 10.1093/bioinformatics/12.6.473.
+  > 首先使用异构加速序列比对的文章
 
 - [ ] S. Rajko and S. Aluru, “Space and time optimal parallel sequence alignments,” IEEE Transactions on Parallel and Distributed Systems, vol. 15, no. 12, pp. 1070–1081, 2004, doi: 10.1109/TPDS.2004.86.
-
-- [ ] R. Koike, K. Kinoshita, and A. Kidera, “Probabilistic description of protein alignments for sequences and structures,” Proteins, vol. 56, no. 1, pp. 157–166, Jul. 2004, doi: 10.1002/prot.20067.
+  > 诞生于GPGPU尚未出世的年代，对整个DP的计算进行分治和任务分发和收集，最终完成并行计算，但我认为没有像BLAST一样考虑到边界问题，并行计算时没有办法对编辑距离作出限制，可能会造成计算资源的浪费，不太灵活。
 
 - [ ] T. D. Pham and J. Zuegg, “A probabilistic measure for alignment-free sequence comparison,” Bioinformatics, vol. 20, no. 18, pp. 3455–3461, Dec. 2004, doi: 10.1093/bioinformatics/bth426.
+  > 非比对算法中的概率分析，引入了许多先验假设，仅仅用于拓宽视野
 
 - [ ] A. N. Arslan, “Regular expression constrained sequence alignment,” Journal of Discrete Algorithms, vol. 5, no. 4, pp. 647–661, Dec. 2007, doi: 10.1016/j.jda.2007.01.003.
+  > 由蛋白质序列可用一种模体（motif）为导向的比对方法所启发，文中提出了一种基于正则表达式构造有限状态自动机的比对方法，与之后的“CNN”有些类似，但显然并没有被广泛接受，进当作扩展阅读
 
 - [ ] G. Lunter, A. Rocco, N. Mimouni, A. Heger, A. Caldeira, and J. Hein, “Uncertainty in homology inferences: Assessing and improving genomic sequence alignment,” Genome Res., vol. 18, no. 2, pp. 298–309, Jan. 2008, doi: 10.1101/gr.6725608.
+  > 文中提到了一种叫边际后验编码（MPD）的算法，从概率论的角度显式地、非启发式地计算了序列比对时的可置信度。 但众所周知序列的进化和变异到一定程度时，会直接涉及到自然选择，概率论的手法或多或少会显得过度理想化，作者同样也开发了一个基于概率论的比对软件，不过显然在当今没有被广泛接受。
 
 - [ ] V. Polyanovsky, M. A. Roytberg, and V. G. Tumanyan, “Reconstruction of genuine pair-wise sequence alignment,” J Comput Biol, vol. 15, no. 4, pp. 379–391, May 2008, doi: 10.1089/cmb.2007.0145.
   > 文中使用“进化模型”的先验知识，人工制造了一些序列以测试比对算法的质量，提供有关比对理论本身发展的见解。
@@ -130,3 +141,13 @@
 在优化（或加速）DP内核时，选择了各种硬件来迎合此计算任务的特点：通用处理器中的SIMD指令、GPGPU中的SIMT执行、FPGA中的波动阵列、细胞神经网络甚至自定义指令集和存算一体结构都被用来发掘这个特殊计算任务的内在特征，以最大限度地减少DP中的时间消耗，但Scoring和Backtracking是两个不同的问题，快速回溯通常伴随着较大的内存占用，哪怕是可定制性最强的硬件（如CAM），有关于Backtracking的工作也是欠缺的（可能是故意的？），我猜想，在回溯算法本身发生重大改进之前，这种时间和空间+设计复杂度上的权衡在计算中仍然是不可避免的，至于细胞神经网络那篇文献中对于回溯的特殊优化，之后一定要安排时间尝试验证验证。
 
 截至7月30日，此次回溯所涉及到的文献阅读已经接近完成了一半，大约到了2008年的时间节点，在此之前学术界对动态规划算法、评分矩阵的合理性甚至都存在质疑，尚未有对基因比对流程产生共识，因此产生了许多对DP、评分矩阵合理性的验证（从概率论、最优化角度），以及很多新奇的、昙花一现的比对方法，之后的阅读将会涉及到更久远的文献，也希望它们能给我更多的启发吧。下周的文献阅读中会重点关注几个需要精读的论文，包括SOAP、BWA、minimap，同时开始系统性的从BWA-MEM算法读起，先搁置对MEM2的研读。  
+
+#### **长期任务 8月6日阶段性总结**
+
+本周继续阅读了有关序列比对算法有关的论文，但08年以前的论文对于我目前能从事的工作，也仅仅只有一些启发意义，并没有太大的参考价值：其中非比对算法涉及到太多先验假设，基于概率论的算法又过于理想化，至于其他方法，要么是复杂度没有优势要么就是在精度上进行了一定的牺牲。至于91年之前的论文，较为重要的研究成果和理论已经被写在教科书上了，所以我选择性的略过了最初几篇。
+
+脱离实践的体验并不很好，所以我打算从我之后研究的主要对象——序列分析全流程入手。之前希望使用windows上的WSL替代一些linux的工作，但WSL终究没法使用像perf一样的底层性能分析工具，毕竟不是物理机里真实接触硬件的Linux内核，所以我尝试在工作站上更换了CentOS7 + Ubuntu22.04 的操作环境，由于海光处理器识别带来的一系列问题，浪费了比较长的时间，而且一次对U盘的误操作让我损失了一部分工作数据，不过在换系统之前我已经完成了工作目录的版本管理，并上传到github上，总之损失是有，但都是可逆的。
+
+下周我会先按照自己的需求，先系统地学习性能分析调优工具（不同于去年实习的蜻蜓点水）。同时打算用python搭一个全流程脚本生成器，用于迅速生成整个分析流程的工作脚本，所生成的工作脚本需要采用多个最佳实践所涉及到的工具链，故可以完成一个比较客观全面的性能分析。找到瓶颈之后，尝试从特定位置有目的地追溯阅读相关代码，并且想一想可行的优化方法，再去进行相关工具的学习，尝试做出一些有意义的工作。
+
+探索的阶段对于我来说差不多就结束了，下一次我会开一篇崭新的报告，此次报告将用于归档。
