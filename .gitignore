@@ -2,4 +2,4 @@
 .gitignore
 /paper/main.*
 !/paper/main.tex
-
+./entries.txt

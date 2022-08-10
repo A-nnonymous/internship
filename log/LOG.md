@@ -29,7 +29,7 @@
 
 #### **Experiment Log**
 
-- [x] Reference Genome GRCH38 downloaded
+- [ ] Reference Genome GRCH38 downloaded
   > Softmask are presented in lower case, indicating... Comparing to hard mask that...
 - [ ] BWA analyzing streamline acknowledged
   > Indexing, Mapping, 
@@ -38,8 +38,9 @@
   Moreover, a heterogeneous acceleration approach is ought to be mastered by me, so some useful work then can be done in this short period of postgraduate life. The usage of git is also important in two different workline( tutor oriented and self-motivated ).
 
   Above all, there's a few thing need to be done:
-  - [ ] Learning git
+  - [x] Learning git
   - [ ] Learning perf
   - [ ] Have some serious exercises in genomic analysis, instead of look at the code aimlessly
   - [ ] Start to practice paperwriting: in English writing, Latex coding, data visualizing
-=======
+
+  This Log of english version is used only for academic writing, no working&experimental things concluded anymore from now on. 
