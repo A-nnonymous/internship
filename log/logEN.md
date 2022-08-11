@@ -1,11 +1,29 @@
 #### LOG FOR MY SELF
 
+#### **Some plans and plains** 
+
+  Some practical experiments is essential to whatever future I encounter. Learning of performance profiling tools is the basic of high performance computing, same as engineering ability.  
+
+  I shall start at running a full process of certain genomic analysis template, and profiling these procedure seperately. Result-oriented code reviewing may have better efficiency than read aimlessly. Currently there's some computing pipeline tools like galaxy, snakemake, nextflow... their convenience in constructing or reproducing computational framework is of little concern to me, the gold standard pipeline in their communities is what I really want to obtain, for which I need to learn them quickly. I need to obtain a most used genomic analysis streamline and configure that environment, then deploy the task properly.
+
+  Second, I need to learn the profiling tools like perf, then analyze the computing process in streamline mentioned above, compiling a report about the bottleneck and more stuff that out of my anticipation for now.
+
+  Moreover, a heterogeneous acceleration approach is ought to be mastered by me, so some useful work then can be done in this short period of postgraduate life. The usage of git is also important in two different workline( tutor oriented and self-motivated ).
+
+  What next is the utmost challenge to me, essential molecular biology and comprehensive understanding of genetic is necessaray to make useful work in the future, study of which could be boring and fruitless in a long period, along with misunderstanding and sarcacisms.
+
+  Above all, there's a few thing need to be done:
+  - [x] Learning git
+  - [ ] Learning perf
+  - [ ] Learning pipeline management tools like Galaxy, nextflow, snakemake
+  - [ ] Have some serious exercises in genomic analysis, instead of look at the code aimlessly
+  - [ ] Start to practice paperwriting: in English writing, Latex coding, data visualizing
   According to the keyword searching of ***"((((TI=(sequence alignment)) OR TI=(read alignment)) NOT TI=(multiple)) NOT TI=(phylogenetic)) AND TS=(algorithm)sequence alignment"*** in Web of Science database, I've obtained 900+ entries of article and perform citation analysis in **histcite**, the citation graph of 150 most influential works (sorted by local citation score) are shown as below:
 ![test.](../pics/out.png)
     Among those articles, I selected a few heuristicly to investigate, the list of papers and their's node tag are presented:
 
 
-#### **Periodical concluding**  
+#### **Periodical concluding**  ***[Aug 1st, 2022]***
 
   Backtracking the most influential works accomplished in sequence alignment algorithms, it's not difficult to find that huge amount of efforts are taken into circumventing or optimizing the usage of dynamic programming kernel.
   
@@ -15,32 +33,4 @@
 
   This bactracking progress is coming to a half till July 30th, which go back to a time period around 2008, where consensus upon validity of dynamic programming algorithm in sequence alignment is not yet established. Therefore, a few researches intended to perform validation of dynamic programming and scoring matrix from the prospect of probablistics or optimization theories, and accompanied with various kind of methods which is far from mainstream nowadays, which can give me some qualitative understanding of pitfall and fruitful direction in future researching.
 
-#### **Some plan about next-steps** ***[Aug 1st, 2022]***
 
-  Some practical experiments is essential to whatever future I encounter. Learning of performance profiling tools is the basic of high performance computing, same as engineering ability.  
-
-  I shall start at running a full process of certain genomic analysis template, and profiling these procedure seperately. Result-oriented code reviewing may have better efficiency than read aimlessly.  
-
-- [ ]  First I need to obtain a most used genomic analysis streamline and configure that environment, then deploy the task properly.
-
-- [ ]  Second, I need to learn the profiling tools like perf, then analyze the computing process in streamline mentioned above, compiling a report about the bottleneck and more stuff that out of my anticipation for now.
-
-- [ ]  Moreover, a heterogeneous acceleration approach is ought to be fully mastered by me, so some useful work then can be done in this short period of postgraduate life.
-
-#### **Experiment Log**
-
-- [ ] Reference Genome GRCH38 downloaded
-  > Softmask are presented in lower case, indicating... Comparing to hard mask that...
-- [ ] BWA analyzing streamline acknowledged
-  > Indexing, Mapping, 
-
-
-  Moreover, a heterogeneous acceleration approach is ought to be mastered by me, so some useful work then can be done in this short period of postgraduate life. The usage of git is also important in two different workline( tutor oriented and self-motivated ).
-
-  Above all, there's a few thing need to be done:
-  - [x] Learning git
-  - [ ] Learning perf
-  - [ ] Have some serious exercises in genomic analysis, instead of look at the code aimlessly
-  - [ ] Start to practice paperwriting: in English writing, Latex coding, data visualizing
-
-  This Log of english version is used only for academic writing, no working&experimental things concluded anymore from now on. 
