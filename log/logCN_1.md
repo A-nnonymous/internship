@@ -16,13 +16,13 @@
 
 4. - [ ] 完成调研，尝试脱离最佳实践，集成新一代工具到流程框架中
 
-5. - [ ] 在Centos中配置一个FPGA开发环境 
+5.  **[aborted]** 在Centos中配置一个FPGA开发环境 
 
 - #### 长期
 
-1. **[ ++++================ ]** 根据各个阶段的不同最佳实践，构建自己的计算流程，用现有测序数据跑性能测试和分析
+1. **[ +++++++++++++++++++= ]** 根据各个阶段的不同最佳实践，构建自己的计算流程，用现有测序数据跑性能测试和分析
 
-2. **[ ==================== ]** 按照实际需求，系统地学习使用性能分析工具，发掘计算、访存热点后对源代码进行进一步注释
+2. **[ +++================= ]** 按照实际需求，系统地学习使用性能分析工具，发掘计算、访存热点后对源代码进行进一步注释
 
 3. **[ +=================== ]** 【继续条件：完成1】阅读BWA-MEM的源代码
 
@@ -40,7 +40,6 @@
 
 原read文件可能为了节约存储空间转为BAM格式，并不代表一开始有比对信息
 
-![test.](../pics/alignment_workflow.png)
  **比对**     
 DNA-Seq 分析从比对流程开始。单个试样被等分为若干个读序组，通过BWA-MEM算法与参考基因组进行比对。比对完毕后通过Picard、 SortSam 和 MergeSamFiles进行合并。 然后标记因PCR伪影而存在的重复读序以防止下游错误。  
 **参考基因组的选择**   
@@ -75,7 +74,181 @@ GDC提供了五个不同的的variant calling流程，但目前对最佳流程�
 至于我未来的工作方向是优化整个流程的哪一个环节，这就由这个性能测试得出的结果决定了，这个测试必须要仔细且力求完备，还有许多知识有待补充：profiling工具的使用、一些底层的硬件知识、甚至是随机过程...
 
 
+## **长期任务 8月20日阶段性总结** 
+本周学习了nextflow的基本语法，并且模仿GATK官方的nextflow最佳实践自己写了一个variant calling全流程的脚本，运行结果符合期望，但不清楚是否具有实际意义。此流程中包括有太多java程序的使用(Picard 和GATK)，其中GATK还貌似在内部集成了hadoop的一些东西，可能会在性能测试上带来许多麻烦。
+![test.](../pics/igv.png)
+上图是本脚本关于新冠肺炎病毒的variant calling结果在IGV上的展示，原始测序的FASTQ数据取自NCBI的<a href="https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&acc=SRR21120977&display=metadata">SRR21120977</a>,参考基因组采用的是<a href="https://www.ncbi.nlm.nih.gov/nuccore/1798174254/">NC_045512</a>。这个脚本基本可以复现一些病毒学论文的结果了（因为参考基因组小，适合我的工作站），下周我会验证它的正确性，并且尝试重新集成一些别的用C语言写的工具如bcftools等，同时观察他们间的区别。
+
+至于性能监测工具的实验，也需要在验证完正确性之后尽快进行了，在这之前仍需要通过一些小项目练手一下，可能会涉及到写一些经典的循环展开、cache对齐等代码并观察perf输出之类的实验，应该耗时不会太长。
+
+文献综述也会在下周尝试进行书写，可能在格式、表达方式上存在很多不妥，修改上预计会花很多时间
 ### ***附录***
+我的脚本 **Aug 20th 2022**：
+```bash
+#! /bin/bash
+
+export cpuCNT=8
+export ORGANISM=covid
+# Temporary hard coded
+export readID=SRR21120977
+export outputPATH=~/projects/output/${readID}
+mkdir -p ~/projects/output/${readID}
+# Mocked up readgroup because SRA don't give that
+export readGroup="@RG\tID:<SRR21120977>\tLB:<SRR21120977>\tSM:<SRR21120977\tPL:ILLUMINA"
+
+export refPATH=~/projects/data/references
+export readPATH=~/projects/data/specimens
+
+export refFILE=${refPATH}/${ORGANISM}/${ORGANISM}.fasta
+export readFILE=${readPATH}/${ORGANISM}/${readID}.fastq
+
+################## Initial alignment with bwa-mem##################
+bwa mem \
+    -t ${cpuCNT} \
+    -Y \
+    -R ${readGroup} \
+    ${refFILE} ${readFILE} \
+    > ${outputPATH}/aligned.sam
+
+export aligned_reads=${outputPATH}/aligned.sam
+################## Initial alignment with bwa-mem##################
+
+
+################## Mark Duplicate and sort with gatk##################
+#In concerning of brevity, no temp file used in this script
+gatk \
+    MarkDuplicatesSpark \
+    -I ${aligned_reads} \
+    -M ${outputPATH}/dedup_metrics.txt \
+    -O ${outputPATH}/sorted_dedup.bam 
+
+export sorted_dedup_reads=${outputPATH}/sorted_dedup.bam
+################## Mark Duplicate and sort with gatk##################
+
+################## Get metrics from picard##################
+export PICARD_JAR=/apps/picard/2.17.11/picard.jar
+
+java -jar ${PICARD_JAR} CollectAlignmentSummaryMetrics R=${refFILE} I=${sorted_dedup_reads} O=${outputPATH}/alignment_metrics.txt
+
+java -jar \
+${PICARD_JAR} \
+CollectInsertSizeMetrics \
+-I ${sorted_dedup_reads} \
+-O ${outputPATH}/insert_metrics.txt \
+-H ${outputPATH}/insert_size_histogram.pdf 
+
+samtools depth -a ${sorted_dedup_reads} > ${outputPATH}/depth_out.txt
+################## Get metrics from picard##################
+################## Create dict with picard##################
+java -jar ${PICARD_JAR} CreateSequenceDictionary \
+R=${refFILE} \
+O=${refPATH}/${ORGANISM}/${ORGANISM}.dict
+################## Create dict with picard##################
+
+################## Variant Calling using GATK hCaller##################
+export input_bam=${sorted_dedup_reads}
+gatk HaplotypeCaller \
+    -R $refFILE \
+    -I $input_bam \
+    -O ${outputPATH}/raw_variants.vcf 
+
+################## Variant calling using GATK hCaller##################
+################## Variant selecting using GATK########################
+export raw_variants=${outputPATH}/raw_variants.vcf
+gatk SelectVariants \
+	-R $refFILE \
+	-V $raw_variants \
+	-select-type SNP \
+	-O ${outputPATH}/raw_snps.vcf
+gatk SelectVariants \
+        -R $refFILE \
+        -V $raw_variants \
+        -select-type INDEL \
+        -O ${outputPATH}/raw_indels.vcf
+################## Variant selecting using GATK########################
+
+################## SNP filtering##################
+export raw_snps=${outputPATH}/raw_snps.vcf 
+gatk VariantFiltration \
+    -R $refFILE \
+    -V $raw_snps \
+    -O ${outputPATH}/filtered_snps.vcf \
+    -filter-name "QD_filter" -filter "QD < 2.0" \
+    -filter-name "FS_filter" -filter "FS > 60.0" \
+    -filter-name "MQ_filter" -filter "MQ < 40.0" \
+    -filter-name "SOR_filter" -filter "SOR > 4.0" \
+    -filter-name "MQRankSum_filter" -filter "MQRankSum < -12.5" \
+    -filter-name "ReadPosRankSum_filter" -filter "ReadPosRankSum < -8.0"
+################## SNP filtering##################
+################## Indel filtering##################
+export raw_indels=${outputPATH}/raw_indels.vcf 
+gatk VariantFiltration \
+    -R $refFILE \
+    -V $raw_indels \
+    -O ${outputPATH}/filtered_indels.vcf \
+	-filter-name "QD_filter" -filter "QD < 2.0" \
+	-filter-name "FS_filter" -filter "FS > 200.0" \
+	-filter-name "SOR_filter" -filter "SOR > 10.0"
+################## Indel filtering##################
+
+################## BQSR##################
+export filtered_snps=${outputPATH}/filtered_snps.vcf
+export filtered_indels=${outputPATH}/filtered_indels.vcf
+
+gatk SelectVariants \
+	--exclude-filtered \
+	-V $filtered_snps \
+	-O ${outputPATH}/bqsr_snps.vcf
+gatk SelectVariants \
+    --exclude-filtered \
+    -V $filtered_indels \
+    -O ${outputPATH}/bqsr_indels.vcf
+gatk BaseRecalibrator \
+	-R $refFILE \
+	-I $input_bam \
+	--known-sites ${outputPATH}/bqsr_snps.vcf \
+	--known-sites ${outputPATH}/bqsr_indels.vcf \
+	-O ${outputPATH}/recal_data.table
+gatk ApplyBQSR \
+    -R $refFILE \
+    -I $input_bam \
+    -bqsr ${outputPATH}/recal_data.table \
+    -O ${outputPATH}/recal.bam
+gatk BaseRecalibrator \
+    -R $refFILE \
+	-I ${outputPATH}/recal.bam \
+    --known-sites ${outputPATH}/bqsr_snps.vcf \
+	--known-sites ${outputPATH}/bqsr_indels.vcf \
+	-O ${outputPATH}/post_recal_data.table
+################## BQSR##################
+
+################## Covariate analysis##################
+export recal_table=${outputPATH}/recal_data.table
+export post_recal_table=${outputPATH}/post_recal_data.table
+gatk AnalyzeCovariates \
+	-before $recal_table \
+	-after $post_recal_table \
+	-plots ${outputPATH}/recalibration_plots.pdf
+################## Covariate analysis##################
+
+################## SNPEFF##################
+# This package should use later version of java than gatk
+export SNPEFF_JAR=/apps/snpEff/snpEff.jar
+export snpeff_db="coronavirus"
+mkdir -p /apps/snpeff/data
+export snpeff_data=/apps/snpeff/data
+/usr/bin/java -jar $SNPEFF_JAR -v \
+	-dataDir $params.snpeff_data \
+	${snpeff_db} \
+	$filtered_snps > ${outputPATH}/filtered_snps.ann.vcf
+################## SNPEFF##################
+
+################## Sample-wised QC##################
+cd ${outputPATH}
+
+/home/pzw/Documents/centShare/panzhaowu/Documents/projects/workflow_templates/nextflow_pipline_VC/bin/parse_metrics.sh ${readID} > ${outputPATH}/report.csv
+################## Sample-wised QC##################
+```
 以下是GDC给出的示例脚本:
 ##### ***Alignment from fastq to reference with read_group:***
 ```
