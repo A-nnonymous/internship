@@ -3,3 +3,5 @@
 /paper/main.*
 !/paper/main.tex
 ./entries.txt
+perf.*
+*.log

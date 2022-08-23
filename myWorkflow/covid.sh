@@ -1,16 +1,19 @@
 #! /bin/bash
+# Built and reviewed by Pan Zhaowu, Aug 7th,2022
 
 export cpuCNT=8
+export JAVA8=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.342.b07-2.el9.x86_64/jre/bin/java
+export JAVA17=/usr/lib/jvm/java-17-openjdk-17.0.4.0.8-3.el9.x86_64/bin/java
 export ORGANISM=covid
 # Temporary hard coded
 export readID=SRR21120977
-export outputPATH=~/projects/output/${readID}
-mkdir -p ~/projects/output/${readID}
+export outputPATH=/home/pzw/projects/output/${readID}
+mkdir -p /home/pzw/projects/output/${readID}
 # Mocked up readgroup because SRA don't give that
 export readGroup="@RG\tID:<SRR21120977>\tLB:<SRR21120977>\tSM:<SRR21120977\tPL:ILLUMINA"
 
-export refPATH=~/projects/data/references
-export readPATH=~/projects/data/specimens
+export refPATH=/home/pzw/projects/data/references
+export readPATH=/home/pzw/projects/data/specimens
 
 export refFILE=${refPATH}/${ORGANISM}/${ORGANISM}.fasta
 export readFILE=${readPATH}/${ORGANISM}/${readID}.fastq
@@ -41,10 +44,13 @@ export sorted_dedup_reads=${outputPATH}/sorted_dedup.bam
 ################## Get metrics from picard##################
 export PICARD_JAR=/apps/picard/2.17.11/picard.jar
 
-java -jar ${PICARD_JAR} CollectAlignmentSummaryMetrics R=${refFILE} I=${sorted_dedup_reads} O=${outputPATH}/alignment_metrics.txt
+java -jar ${PICARD_JAR} \
+CollectAlignmentSummaryMetrics \
+R=${refFILE} \
+I=${sorted_dedup_reads} \
+O=${outputPATH}/alignment_metrics.txt
 
-java -jar \
-${PICARD_JAR} \
+java -jar ${PICARD_JAR} \
 CollectInsertSizeMetrics \
 -I ${sorted_dedup_reads} \
 -O ${outputPATH}/insert_metrics.txt \
@@ -150,7 +156,7 @@ export SNPEFF_JAR=/apps/snpEff/snpEff.jar
 export snpeff_db="coronavirus"
 mkdir -p /apps/snpeff/data
 export snpeff_data=/apps/snpeff/data
-/usr/bin/java -jar $SNPEFF_JAR -v \
+{JAVA17} -jar $SNPEFF_JAR -v \
 	-dataDir $params.snpeff_data \
 	${snpeff_db} \
 	$filtered_snps > ${outputPATH}/filtered_snps.ann.vcf
